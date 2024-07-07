@@ -1,0 +1,18 @@
+.btn {
+    background: #164863;
+    border-color: #DDF2FD;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #38A3D1, #427D9D); /* Degradado lineal */
+    border-color: #164863;
+    color: #DDF2FD;
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #38A3D1, #427D9D); /* Degradado lineal */
+}
+
+h5 {
+    color: #DDF2FD;
+}

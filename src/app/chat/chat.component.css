@@ -1,0 +1,36 @@
+.square {
+    width: 680px; /* Ancho del cuadrado */
+    height: 680px; /* Alto del cuadrado */
+    max-width: 100%; /* Ancho máximo para adaptarse a la pantalla */
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #427D9D, #38A3D1); /* Degradado lineal */
+    border-radius: 20px;
+}
+
+.form-control {
+    width: 450px;
+}
+
+.title-chat {
+    color: #DDF2FD;
+}
+
+h2 {
+    color:#DDF2FD;
+}
+
+.btn {
+    background: #164863;
+    border-color: #DDF2FD;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #38A3D1, #164863); /* Degradado lineal */
+    border-color: #164863;
+    color: #DDF2FD;
+}

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service'; // Importa AuthService
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  selector: 'app-ucp',
+  templateUrl: './ucp.component.html',
+  styleUrl: './ucp.component.css'
 })
-export class NavbarComponent implements OnInit {
+export class UcpComponent implements OnInit {
   isLoggedIn: boolean = false; // Estado de autenticación
 
   constructor(private authService: AuthService) { }

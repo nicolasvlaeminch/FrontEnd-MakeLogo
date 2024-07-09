@@ -1,29 +1,26 @@
 <!-- Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="loginModalLabel">Inicio de Sesión</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Aquí coloca los campos de inicio de sesión -->
-          <form>
-            <div class="mb-3">
-              <label for="loginEmail" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="loginEmail" placeholder="Tu correo electrónico">
-            </div>
-            <div class="mb-3">
-              <label for="loginPassword" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="loginPassword" placeholder="Tu contraseña">
-            </div>
-            <!-- Agrega más campos según tu formulario de inicio de sesión -->
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Ingresar</button>
-        </div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Inicio de Sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Formulario de inicio de sesión -->
+        <form (ngSubmit)="login()">
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="loginEmail" [(ngModel)]="email" name="email" placeholder="Tu correo electrónico" required>
+          </div>
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="loginPassword" [(ngModel)]="password" name="password" placeholder="Tu contraseña" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Ingresar</button>
+          <p class="text-danger mt-2" *ngIf="errorMessage">{{ errorMessage }}</p>
+        </form>
       </div>
     </div>
   </div>
-  
+</div>

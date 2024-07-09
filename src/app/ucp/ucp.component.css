@@ -1,0 +1,35 @@
+.container-ucp {
+    height: 100vh;
+    background: linear-gradient(135deg, #427D9D, #38A3D1); /* Degradado lineal */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.form-ucp {
+    max-width: 300px;
+    background: linear-gradient(135deg, #427D9D, #38A3D1); /* Degradado lineal */
+    border-radius: 20px;
+    border: 1px solid #DDF2FD;
+}
+
+.btn {
+    background: #164863;
+    border-color: #DDF2FD;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #38A3D1, #164863); /* Degradado lineal */
+    border-color: #164863;
+    color: #DDF2FD;
+}
+
+h1, p {
+    color: #DDF2FD;
+}
+
+@media (min-width: 768px) {
+    .form-ucp {
+        max-width: 600px;
+    }
+}

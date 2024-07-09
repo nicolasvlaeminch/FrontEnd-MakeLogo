@@ -1,1 +1,5 @@
-<div class="main"><app-navbar></app-navbar><app-chat></app-chat></div>
+<div class="main">
+    <app-navbar></app-navbar>
+    <app-chat *ngIf="showComponent"></app-chat>
+    <router-outlet></router-outlet>
+</div>

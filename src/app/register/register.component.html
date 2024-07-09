@@ -11,21 +11,20 @@
         <form>
           <div class="mb-3">
             <label for="registerEmail" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="registerEmail" placeholder="Tu correo electrónico">
+            <input type="email" class="form-control" id="registerEmail" [(ngModel)]="email" name="email" placeholder="Tu correo electrónico" required>
           </div>
           <div class="mb-3">
             <label for="registerPassword" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="registerPassword" placeholder="Tu contraseña">
+            <input type="password" class="form-control" id="registerPassword" [(ngModel)]="password" name="password" placeholder="Tu contraseña">
           </div>
           <div class="mb-3">
             <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
-            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirma tu contraseña">
+            <input type="password" class="form-control" id="confirmPassword" [(ngModel)]="confirmPassword" name="confirmPassword" placeholder="Confirma tu contraseña" required>
           </div>
-          <!-- Más campos según tus necesidades -->
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Registrarse</button>
+        <button type="button" class="btn btn-primary" (click)="register()">Registrarse</button>
       </div>
     </div>
   </div>

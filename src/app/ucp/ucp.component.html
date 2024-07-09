@@ -1,0 +1,17 @@
+<div class="row container-ucp">
+    <form class="form-ucp col-12 p-5">
+        <div *ngIf="isLoggedIn">
+            <h1 class="col-12 mb-3">Panel de usuario</h1>
+            <p class="col-12">¡Bienvenido XNombre!</p>
+            <p class="col-12">Plan Actual: XPlan</p>
+            <p class="col-12">Intentos disponibles: XNumero</p>
+            <button class="btn btn-primary col-12 mb-3 mt-3">Actualizar plan</button>
+            <button class="btn btn-primary col-12 mb-3">Cambiar correo electrónico</button>
+            <button class="btn btn-primary col-12">Cambiar contraseña</button>
+        </div>
+        <div *ngIf="!isLoggedIn">
+            <h1 class="col-12 mb-3">Permiso denegado</h1>
+            <p class="col-12">Es necesiario iniciar sesión para ver esta sección.</p>
+        </div>
+    </form>
+</div>

@@ -1,6 +1,6 @@
-.navbar {
+/* .navbar {
     padding-top: 30px;
-}
+} */
 
 a {
     color: #DDF2FD;
@@ -10,4 +10,29 @@ a {
 a:hover {
     color:white;
     background-color: #164863;
+}
+
+.btn {
+    background: #164863;
+    border-color: #DDF2FD;
+}
+
+.btn:hover {
+    color: #164863;
+    background: linear-gradient(135deg, #DDF2FD, #38A3D1);
+}
+
+.menu-outline {
+    background: linear-gradient(135deg, #38A3D1, #164863); /* Degradado lineal */
+    border-color: #164863;
+    color: #DDF2FD;
+}
+
+.btn-menu {
+    color: #DDF2FD;
+}
+
+.btn-menu:hover {
+    color: #164863;
+    background: linear-gradient(135deg, #DDF2FD, #38A3D1);
 }
